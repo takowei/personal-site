@@ -1,0 +1,12 @@
+{
+  "name": "personal-site",
+  "version": "0.1.0",
+  "module": "src/index.ts",
+  "scripts": {
+    "test": "bun test",
+    "lint": "bunx biome check src"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "latest"
+  }
+}
