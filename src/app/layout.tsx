@@ -4,7 +4,8 @@ import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "邱哲偉 Che-Wei Chiu",
-  description: "資訊工程學系學生｜後端 / 資料 / 量化系統開發",
+  description:
+    "資訊工程學系學生｜研究方法論與統計驗證：量化策略、AI agent 評測、LSM-tree 儲存引擎",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
