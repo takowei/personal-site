@@ -9,8 +9,7 @@ export default function HomePage() {
         我在意的是同一件事，在不同題目上反覆做：一個結論在被驗證之前，不算數。
       </p>
       <p>
-        📧 <a href="mailto:a0932097165@gmail.com">a0932097165@gmail.com</a>
-        　｜　GitHub:{" "}
+        GitHub:{" "}
         <a href="https://github.com/takowei" target="_blank" rel="noreferrer">
           github.com/takowei
         </a>
