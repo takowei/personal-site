@@ -5,16 +5,18 @@ const pageToMarkdownMock = vi.fn();
 const toMarkdownStringMock = vi.fn();
 
 vi.mock("@notionhq/client", () => ({
-  Client: vi.fn().mockImplementation(() => ({
-    databases: { query: queryMock },
-  })),
+  Client: vi.fn().mockImplementation(function () {
+    return { databases: { query: queryMock } };
+  }),
 }));
 
 vi.mock("notion-to-md", () => ({
-  NotionToMarkdown: vi.fn().mockImplementation(() => ({
-    pageToMarkdown: pageToMarkdownMock,
-    toMarkdownString: toMarkdownStringMock,
-  })),
+  NotionToMarkdown: vi.fn().mockImplementation(function () {
+    return {
+      pageToMarkdown: pageToMarkdownMock,
+      toMarkdownString: toMarkdownStringMock,
+    };
+  }),
 }));
 
 const samplePage = {
